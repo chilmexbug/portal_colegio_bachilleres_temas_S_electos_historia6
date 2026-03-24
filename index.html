@@ -3,80 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia Universal - Gabriel Amaro</title>
+    <title>Historia Universal - Gabriel Amaro Juarez</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f8f9fa; font-family: 'Times New Roman', serif; }
-        .header-negro { background: #1a1a1b; color: white; padding: 60px 20px; border-bottom: 8px solid #b02a2a; text-align: center; margin-bottom: 40px; }
-        .autor-texto { color: #f47a1f; font-weight: bold; font-size: 1.5rem; margin-top: 15px; }
-        .card { border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .card-img-top { height: 280px; object-fit: cover; border-bottom: 4px solid #b02a2a; }
-        .btn-info-custom { background-color: #ffc107; border: none; color: black; font-weight: bold; width: 100%; }
-        .referencias-caja { background: white; padding: 30px; border-left: 5px solid #b02a2a; margin-top: 50px; margin-bottom: 50px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        footer { background: #1a1a1b; color: #888; padding: 30px; text-align: center; }
+        :root { --wwii-dark: #1a1a1b; --wwii-red: #b02a2a; --wwii-orange: #f47a1f; }
+        body { background-color: #f4f4f4; color: var(--wwii-dark); font-family: 'Times New Roman', Times, serif; }
+        .jumbotron-wwii {
+            background-color: var(--wwii-dark); color: white; padding: 60px 20px;
+            border-radius: 0 0 15px 15px; text-align: center; border-bottom: 10px solid var(--wwii-red); 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4); margin-bottom: 40px;
+        }
+        .jumbotron-wwii h1 { color: var(--wwii-orange); font-weight: 900; text-transform: uppercase; font-size: 3.5rem; text-shadow: 2px 2px 4px #000; }
+        .autor-header { color: var(--wwii-orange); font-weight: bold; font-size: 1.4rem; margin-top: 10px; }
+        .wwii-card { background-color: white; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; height: 100%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .card-img-top { width: 100%; height: 320px; object-fit: cover; border-bottom: 4px solid var(--wwii-red); }
+        .btn-info-custom { background-color: #ffc107; color: #000; font-weight: bold; border: none; width: 100%; padding: 10px; }
+        .bibliografia { background-color: white; border-left: 5px solid var(--wwii-red); padding: 30px; margin-top: 60px; margin-bottom: 40px; }
+        footer { background-color: var(--wwii-dark); color: #888; padding: 30px 20px; border-top: 6px solid var(--wwii-orange); }
     </style>
 </head>
 <body>
-
-    <div class="header-negro">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container justify-content-center">
+            <span class="navbar-brand mb-0 h1" style="font-size: 0.8rem;">COLEGIO DE BACHILLERES - PROYECTO HISTORIA</span>
+        </div>
+    </nav>
+    <div class="jumbotron-wwii">
         <div class="container">
             <h1>1939 - 1945</h1>
             <p class="fs-4">Crónica de la Segunda Guerra Mundial</p>
-            <div class="autor-texto">GABRIEL EFRAIN AMARO JUAREZ</div>
+            <div class="autor-header">GABRIEL EFRAIN AMARO JUAREZ</div>
         </div>
     </div>
-
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-                <div class="card h-100">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Adolf_Hitler_cropped.jpg/800px-Adolf_Hitler_cropped.jpg" class="card-img-top">
+                <div class="wwii-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Adolf_Hitler_f_cropped.jpg/480px-Adolf_Hitler_f_cropped.jpg" class="card-img-top" alt="Hitler">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Causas - Adolf Hitler</h5>
-                        <p class="card-text small text-muted">Invasión a Polonia y el expansionismo del Tercer Reich.</p>
-                        <button class="btn btn-info-custom">Más información:</button>
+                        <div class="card-title h5 fw-bold">Causas - Adolf Hitler</div>
+                        <p class="card-text text-muted small">Su invasión a Polonia desató el conflicto en Europa.</p>
+                        <button class="btn-info-custom">Más información:</button>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Winston_Churchill_cph.3a53163.jpg/800px-Winston_Churchill_cph.3a53163.jpg" class="card-img-top">
+                <div class="wwii-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sir_Winston_Churchill_1941_Portrait_by_Yousuf_Karsh.jpg/480px-Sir_Winston_Churchill_1941_Portrait_by_Yousuf_Karsh.jpg" class="card-img-top" alt="Churchill">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Naciones - Winston Churchill</h5>
-                        <p class="card-text small text-muted">Liderazgo británico y resistencia ante el avance del Eje.</p>
-                        <button class="btn btn-info-custom">Más información:</button>
+                        <div class="card-title h5 fw-bold">Naciones - Winston Churchill</div>
+                        <p class="card-text text-muted small">Líder británico que resistió el avance del Eje.</p>
+                        <button class="btn-info-custom">Más información:</button>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/FDR-Flickr_crop.jpg/800px-FDR-Flickr_crop.jpg" class="card-img-top">
+                <div class="wwii-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/FDR_1944_Color_Portrait.jpg/480px-FDR_1944_Color_Portrait.jpg" class="card-img-top" alt="Roosevelt">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Nuevo Orden - Roosevelt</h5>
-                        <p class="card-text small text-muted">Entrada de EE.UU. y la base para las Naciones Unidas.</p>
-                        <button class="btn btn-info-custom">Más información:</button>
+                        <div class="card-title h5 fw-bold">El Orden - F.D. Roosevelt</div>
+                        <p class="card-text text-muted small">Presidente de EE.UU. y pieza clave en la creación de la ONU.</p>
+                        <button class="btn-info-custom">Más información:</button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="referencias-caja">
-            <h4 class="h6 fw-bold text-uppercase mb-3">Fuentes de Consulta (Bibliografía):</h4>
-            <ul class="list-unstyled mb-0">
-                <li class="mb-2"><strong>Vázquez, S. (2024).</strong> <em>Temas Selectos de Historia Universal I</em>. Ciudad de México: Editorial Santillana / Material COBAQ.</li>
-                <li><strong>Lozano, J. J. (2023).</strong> <em>Historia del Mundo Contemporáneo</em>. Madrid: Ediciones Akal.</li>
-            </ul>
+        <div class="bibliografia">
+            <h4 class="h6 fw-bold text-uppercase">Bibliografía:</h4>
+            <p class="mb-0"><strong>Vázquez Limón, M. I. (2024).</strong> <em>Conciencia histórica 3</em>. Conexión Editorial. ISBN: 978-970-96955-3-3.</p>
         </div>
     </div>
-
-    <footer>
+    <footer class="text-center">
         <div class="container">
             <p class="mb-1"><strong>Gabriel Efrain Amaro Juarez</strong></p>
-            <p class="small mb-0">Colegio de Bachilleres - Historia 6</p>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
