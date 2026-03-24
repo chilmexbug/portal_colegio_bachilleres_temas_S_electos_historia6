@@ -1,32 +1,67 @@
-<div class="row g-4">
-    <div class="col-md-4">
-        <div class="card-wwii">
-            <img src="img/hitler.jpg" class="foto-lider" alt="Hitler">
-            <div class="p-3">
-                <h5 class="fw-bold">Causas - Adolf Hitler</h5>
-                <p class="small text-muted">Invasión a Polonia.</p>
-                <button class="btn-custom">Más información:</button>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia - Gabriel Efrain Amaro Juarez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f4f4f4; font-family: 'Times New Roman', serif; }
+        .header-historia { background: #1a1a1b; color: white; padding: 50px; text-align: center; border-bottom: 8px solid #b02a2a; }
+        .autor { color: #f47a1f; font-weight: bold; font-size: 1.5rem; }
+        .card-wwii { background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-top: 20px; text-align: center; overflow: hidden; height: 100%; transition: 0.3s; }
+        .card-wwii:hover { transform: scale(1.02); }
+        .foto-lider { width: 100%; height: 300px; object-fit: cover; display: block; background-color: #ddd; }
+        .btn-custom { background: #ffc107; font-weight: bold; width: 100%; border: none; padding: 10px; margin-top: 10px; }
+        .footer-propio { background: #1a1a1b; color: white; text-align: center; padding: 20px; margin-top: 50px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="header-historia">
+        <h1>1939 - 1945</h1>
+        <p>Crónica de la Segunda Guerra Mundial</p>
+        <div class="autor">GABRIEL EFRAIN AMARO JUAREZ</div>
+    </div>
+
+    <div class="container mt-4 mb-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card-wwii">
+                    <img src="img/hitler.jpg" class="foto-lider" alt="Hitler">
+                    <div class="p-3">
+                        <h5 class="fw-bold">Causas - Adolf Hitler</h5>
+                        <p class="small text-muted">Invasión a Polonia.</p>
+                        <button class="btn-custom">Más información:</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-wwii">
+                    <img src="img/churchill.jpg" class="foto-lider" alt="Churchill">
+                    <div class="p-3">
+                        <h5 class="fw-bold">Naciones - Winston Churchill</h5>
+                        <p class="small text-muted">Resistencia británica.</p>
+                        <button class="btn-custom">Más información:</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-wwii">
+                    <img src="img/roosevelt.jpg" class="foto-lider" alt="Roosevelt">
+                    <div class="p-3">
+                        <h5 class="fw-bold">El Orden - F.D. Roosevelt</h5>
+                        <p class="small text-muted">Líder de EE.UU.</p>
+                        <button class="btn-custom">Más información:</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="card-wwii">
-            <img src="img/churchill.jpg" class="foto-lider" alt="Churchill">
-            <div class="p-3">
-                <h5 class="fw-bold">Naciones - Winston Churchill</h5>
-                <p class="small text-muted">Resistencia británica.</p>
-                <button class="btn-custom">Más información:</button>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card-wwii">
-            <img src="img/roosevelt.jpg" class="foto-lider" alt="Roosevelt">
-            <div class="p-3">
-                <h5 class="fw-bold">El Orden - F.D. Roosevelt</h5>
-                <p class="small text-muted">Líder de EE.UU.</p>
-                <button class="btn-custom">Más información:</button>
-            </div>
-        </div>
-    </div>
-</div>
+
+    <footer class="footer-propio">
+        &copy; 2026 - Proyecto de Historia - Gabriel Efrain Amaro Juarez
+    </footer>
+
+</body>
+</html>
