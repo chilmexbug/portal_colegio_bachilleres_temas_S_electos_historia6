@@ -15,8 +15,22 @@
         }
         .jumbotron-wwii h1 { color: var(--wwii-orange); font-weight: 900; text-transform: uppercase; font-size: 3.5rem; text-shadow: 2px 2px 4px #000; }
         .autor-header { color: var(--wwii-orange); font-weight: bold; font-size: 1.4rem; margin-top: 10px; }
+        
+        /* === ESTO ES LO QUE ARREGLA LAS FOTOS === */
+        .card-img-container { 
+            height: 320px; /* Altura fija para el cuadro */
+            overflow: hidden; /* Corta el exceso si es muy grande */
+            display: flex; justify-content: center; align-items: center; /* Centra la imagen */
+            border-bottom: 4px solid var(--wwii-red); /* La linea roja va aquí */
+        }
+        .wwii-card-img { 
+            width: 100%; height: 100%; /* Que ocupe todo el espacio */
+            object-fit: cover; /* QUE SALGA COMPLETA Y BIEN AJUSTADA */
+            object-position: center; /* Centrada */
+        }
+        /* ======================================= */
+
         .wwii-card { background-color: white; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; height: 100%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .card-img-top { width: 100%; height: 320px; object-fit: cover; border-bottom: 4px solid var(--wwii-red); }
         .btn-info-custom { background-color: #ffc107; color: #000; font-weight: bold; border: none; width: 100%; padding: 10px; }
         .bibliografia { background-color: white; border-left: 5px solid var(--wwii-red); padding: 30px; margin-top: 60px; margin-bottom: 40px; }
         footer { background-color: var(--wwii-dark); color: #888; padding: 30px 20px; border-top: 6px solid var(--wwii-orange); }
@@ -39,7 +53,9 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="wwii-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Adolf_Hitler_f_cropped.jpg/480px-Adolf_Hitler_f_cropped.jpg" class="card-img-top" alt="Hitler">
+                    <div class="card-img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Adolf_Hitler_f_cropped.jpg/480px-Adolf_Hitler_f_cropped.jpg" class="wwii-card-img" alt="Hitler">
+                    </div>
                     <div class="card-body text-center">
                         <div class="card-title h5 fw-bold">Causas - Adolf Hitler</div>
                         <p class="card-text text-muted small">Su invasión a Polonia desató el conflicto en Europa.</p>
@@ -49,7 +65,9 @@
             </div>
             <div class="col">
                 <div class="wwii-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sir_Winston_Churchill_1941_Portrait_by_Yousuf_Karsh.jpg/480px-Sir_Winston_Churchill_1941_Portrait_by_Yousuf_Karsh.jpg" class="card-img-top" alt="Churchill">
+                    <div class="card-img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sir_Winston_Churchill_1941_Portrait_by_Yousuf_Karsh.jpg/480px-Sir_Winston_Churchill_1941_Portrait_by_Yousuf_Karsh.jpg" class="wwii-card-img" alt="Churchill">
+                    </div>
                     <div class="card-body text-center">
                         <div class="card-title h5 fw-bold">Naciones - Winston Churchill</div>
                         <p class="card-text text-muted small">Líder británico que resistió el avance del Eje.</p>
@@ -59,7 +77,9 @@
             </div>
             <div class="col">
                 <div class="wwii-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/FDR_1944_Color_Portrait.jpg/480px-FDR_1944_Color_Portrait.jpg" class="card-img-top" alt="Roosevelt">
+                    <div class="card-img-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/FDR_1944_Color_Portrait.jpg/480px-FDR_1944_Color_Portrait.jpg" class="wwii-card-img" alt="Roosevelt">
+                    </div>
                     <div class="card-body text-center">
                         <div class="card-title h5 fw-bold">El Orden - F.D. Roosevelt</div>
                         <p class="card-text text-muted small">Presidente de EE.UU. y pieza clave en la creación de la ONU.</p>
